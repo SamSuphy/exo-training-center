@@ -1,8 +1,8 @@
+<button id="zoom-out">Zoom -</button>
+<button id="zoom-in">Zoom +</button>
 <div id="pdf-viewer"></div>
-
 <script>
     var pdfDoc = null, scale = 1;
-
     $(document).ready(function () {
         var cryptedUrl = '{{ cryptedPdfPath | raw }}';
         if (cryptedUrl) {
@@ -16,6 +16,19 @@
         } else {
             $('#pdf-viewer').hide();
         }
+
+
+
+        $('#zoom-in').on('click', function (e) {
+            e.preventDefault();
+            scale = 2;
+            renderAllPages();
+        });
+        $('#zoom-out').on('click', function (e) {
+            e.preventDefault();
+            scale = 1;
+            renderAllPages();
+        });
     });
 
     /**
@@ -35,6 +48,7 @@
      * Get each page info from document and render page.
      */
     function renderAllPages() {
+        $('#pdf-viewer').html();
         for (var i = 1; i <= pdfDoc.numPages; i++) {
             renderPage(i);
         }

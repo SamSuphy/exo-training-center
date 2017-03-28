@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 function dynamizeContent(container) {
     var email_regex = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi;
-    var link_regex = /(https?:\/\/(([-\w\.]+)+(:\d+)?(\/([\w/_%'éè\.-]*(\?\S+)?)?)?))/gi;
+    var link_regex = /(https?:\/\/(([-\w\.]+)+(:\d+)?(\/([\w/_%'éè\.-]*([()]*\S+)?)?)?))/gi;
 
     $(container).find('.js-enable-email').each(function () {
         $(this).html($(this).html().replace(email_regex, '<a href="mailto:$1">$1</a>'));
