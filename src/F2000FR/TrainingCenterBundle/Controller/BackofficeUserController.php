@@ -48,6 +48,7 @@ class BackofficeUserController extends BaseController {
             $oUserTmp->setStatus(User::STATUS_ACTIVE);
             $oUserTmp->setCreatedDate(new \DateTime());
             $oUserTmp->setUpdatedDate(new \DateTime());
+            $oUserTmp->setPassword(parent::cryptPwd($oUserTmp->getPassword()));
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($oUserTmp);

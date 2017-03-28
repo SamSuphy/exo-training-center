@@ -195,7 +195,7 @@ class UserController extends BaseController {
 
             $isAccessAllowed = $oUserTmp && ($oUserTmp->isAdmin() || !$bMaintenance);
             if ($isAccessAllowed) {
-                if ($oUserTmp->verifAuth($oUser->getPassword())) {
+                if ($oUserTmp->verifAuth(parent::cryptPwd($oUser->getPassword()))) {
                     $oSession->set('oUser', $oUserTmp);
                     return $this->redirect($this->generateUrl('home'));
                 } else {

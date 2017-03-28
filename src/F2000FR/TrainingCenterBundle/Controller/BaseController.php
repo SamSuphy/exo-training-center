@@ -38,4 +38,8 @@ abstract class BaseController extends Controller {
         return '{' . $str . '}';
     }
 
+    public function cryptPwd($sPwd) {
+        return sha1('@Wi9H/z78y2]MKd/c(6V' . $sPwd);
+    }
+
 }
