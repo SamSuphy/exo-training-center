@@ -21,12 +21,12 @@
 
         $('#zoom-in').on('click', function (e) {
             e.preventDefault();
-            scale = 2;
+            scale += 0.2;
             renderAllPages();
         });
         $('#zoom-out').on('click', function (e) {
             e.preventDefault();
-            scale = 1;
+            scale -= 0.2;
             renderAllPages();
         });
     });
@@ -48,7 +48,7 @@
      * Get each page info from document and render page.
      */
     function renderAllPages() {
-        $('#pdf-viewer').html();
+        $('#pdf-viewer').html('');
         for (var i = 1; i <= pdfDoc.numPages; i++) {
             renderPage(i);
         }
