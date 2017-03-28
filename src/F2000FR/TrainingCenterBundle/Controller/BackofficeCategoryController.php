@@ -4,7 +4,7 @@ namespace F2000FR\TrainingCenterBundle\Controller;
 
 use F2000FR\TrainingCenterBundle\Entity\Category;
 use F2000FR\TrainingCenterBundle\Entity\User;
-use F2000FR\TrainingCenterBundle\Form\CategoryType;
+use F2000FR\TrainingCenterBundle\Form\Type\CategoryType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;

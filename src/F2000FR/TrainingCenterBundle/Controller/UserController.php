@@ -6,7 +6,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use F2000FR\TrainingCenterBundle\Entity\User;
 use F2000FR\TrainingCenterBundle\Entity\CV;
-use F2000FR\TrainingCenterBundle\Form\LoginType;
+use F2000FR\TrainingCenterBundle\Form\Type\LoginType;
 use F2000FR\TrainingCenterBundle\Form\Type\UserAccountType;
 use F2000FR\TrainingCenterBundle\Form\Type\CvType;
 use Symfony\Component\HttpFoundation\Request;
