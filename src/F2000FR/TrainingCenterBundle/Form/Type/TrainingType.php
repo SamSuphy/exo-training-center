@@ -43,6 +43,13 @@ class TrainingType extends AbstractType {
                     'label' => 'Privée ?',
                     'required' => false,
                 ))
+                ->add('message', FormType\TextareaType::class, array(
+                    'attr' => array(
+                        'placeholder' => 'Message',
+                        'rows' => 3,
+                    ),
+                    'label' => false,
+                ))
                 ->add('startDate', FormType\DateType::class, array(
                     'widget' => 'single_text',
                     'format' => 'dd/MM/yyyy',

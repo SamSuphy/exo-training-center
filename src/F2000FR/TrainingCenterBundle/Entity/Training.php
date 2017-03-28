@@ -64,6 +64,13 @@ class Training {
     private $private;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="message", type="text")
+     */
+    private $message;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="start_date", type="datetime")
@@ -307,6 +314,14 @@ class Training {
      */
     public function getPrivate() {
         return $this->private;
+    }
+
+    function getMessage() {
+        return $this->message;
+    }
+
+    function setMessage($message) {
+        $this->message = $message;
     }
 
     /**
