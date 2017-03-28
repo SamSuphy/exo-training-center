@@ -1,6 +1,6 @@
 <?php
 
-namespace F2000FR\TrainingCenterBundle\Form;
+namespace F2000FR\TrainingCenterBundle\Form\Type;
 
 use Symfony\Component\Form\FormBuilderInterface;
 

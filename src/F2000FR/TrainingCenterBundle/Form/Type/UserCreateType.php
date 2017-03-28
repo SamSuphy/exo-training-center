@@ -1,9 +1,9 @@
 <?php
 
-namespace F2000FR\TrainingCenterBundle\Form;
+namespace F2000FR\TrainingCenterBundle\Form\Type;
 
-use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type as FormType;
+use Symfony\Component\Form\FormBuilderInterface;
 
 class UserCreateType extends AbstractAdminUserType {
 

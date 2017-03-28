@@ -1,10 +1,10 @@
 <?php
 
-namespace F2000FR\TrainingCenterBundle\Form;
+namespace F2000FR\TrainingCenterBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type as FormType;
+use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class LoginType extends AbstractType {

@@ -1,12 +1,12 @@
 <?php
 
-namespace F2000FR\TrainingCenterBundle\Form;
+namespace F2000FR\TrainingCenterBundle\Form\Type;
 
-use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\Form\Extension\Core\Type as FormType;
-use Symfony\Component\OptionsResolver\OptionsResolver;
 use F2000FR\TrainingCenterBundle\Entity\User;
 use F2000FR\TrainingCenterBundle\Form\Type\UserAccountType;
+use Symfony\Component\Form\Extension\Core\Type as FormType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class AbstractAdminUserType extends UserAccountType {
 
