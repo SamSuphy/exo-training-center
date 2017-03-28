@@ -29,7 +29,7 @@
                 <div class="span4 offset4 white-zone">
                     <h2>Identifiez-vous</h2>
                     <br />
-                    {{ form_start(form, {'class' : 'pagination-centered buttons'}) }}
+                    {{ form_start(form, {'class' : 'pagination-centered buttons', 'action' : path('login')}) }}
                     {{ form_widget(form) }}
                     {{ form_end(form) }}
                     <br />
